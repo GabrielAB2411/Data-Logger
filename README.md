@@ -80,7 +80,7 @@ Projeto desenvolvido com os seguintes componentes:
 
 ## 📦 Documentação
 
-### Especificações técnicas do produto
+### Especificações técnica
 
 | Link | Descrição |
 | --- | --- |

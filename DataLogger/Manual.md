@@ -3,77 +3,87 @@
     <img src="./Assets/Title.PNG" width="270">
 <br>
 <br>
-Nexum Tech: Data Logger
+Nexum Tech: Manual do usuário
 </h1>
 
 <hr />
 
-## :dart: Objetivo
+## :blue_book: Introdução
 
 <br>
 
-O objetivo deste trabalho é desenvolver um Proof of Concept (PoC) utilizando a plataforma Arduino UNO R3 para realizar medições de luminosidade, temperatura e umidade em um ambiente industrial. O sistema calculará a média ponderada dessas leituras a cada minuto de operação, exibindo-as em um display de cristal líquido (LCD) e armazenando-as na memória EEPROM com timestamps, enquanto aciona um alerta sonoro e luminoso caso os parâmetros estejam fora dos níveis de referência predefinidos. Além disso, o projeto incluirá uma abertura gráfica personalizada com o logo ou slogan da empresa. Os triggers definidos para disparar o alerta são: temperatura entre 15°C e 25°C, luminosidade entre 0% e 30%, e umidade entre 30% e 50%.
-
-<br>
-
-<hr />
-
-## :page_with_curl: Tutorial
-
-<br>
-
-Lista de dependências para executar o projeto:
-
-    Client:
-    - React 18
-    - Vite
-    - Tailwind CSS
-    - AOS
-    - React-Query
-    - Axios 
-    - Apex Charts
-    - Data table component
-    - React-Player
-    - React-Spinners
-    - React-Phosphor
-
-    Server:
-    - .Net 6
-    - Entity Framework Core
-    - SQL Server
-
-OBS: É necessário fazer a importação da base de dados do arquivo "datatran2013.csv" de dados dentro do seu banco de dados, e em seguida executar os scripts encontrado no arquivo "cria_banco.txt" e "normaliza_banco.txt" para que os dados possam ser acessados e consumidos propriamente.
+Este projeto é baseado na arquitetura AVR ATmega328P e implementa um data logger capaz de monitorar luminosidade através do sensor LDR, temperatura ambiente e umidade relativa do ar por meio do sensor DHT11. O sistema utiliza a EEPROM para o registro de anormalidades, como descrito no código fonte. Além disso, o equipamento foi construído com um display LCD I2C 16x2 e um RTC I2C para registro temporal, complementado por três LEDs sinalizadores (verde, vermelho e amarelo) para alertas visuais.
 
 <br>
 
 <hr />
 
-## :city_sunset: Preview
+## :hammer: Funcionalidades
 
 <br>
 
-<div align="center">
-    <img src="./Assets/Preview.gif" width="570" height="230">
-</div>
+- **Monitoramento de Luminosidade:** O sensor LDR é responsável por capturar variações na luminosidade do ambiente, fornecendo informações valiosas para análise de condições de iluminação;
+- **Medição de Temperatura e Umidade:** O sensor DHT11 possibilita a medição precisa da temperatura e umidade relativa do ar, aspectos cruciais para o controle de ambientes;
+- **Registro em EEPROM:** Os dados coletados são armazenados na EEPROM do Arduino, permitindo o acesso a históricos de leituras para análise retrospectiva;
+- **Exibição em Display LCD:** O display LCD I2C 16x2 proporciona uma interface intuitiva para visualização em tempo real dos dados coletados;
+- **Sinalização de Anormalidades:** Os LEDs sinalizadores indicam de forma clara e imediata quando os parâmetros monitorados ultrapassam os níveis de referência estabelecidos.
 
 <br>
 
 <hr />
 
 ## :rocket: Componentes Utilizados 
+<br>
 
-Projeto desenvolvido com os seguintes componentes:
+1. **MCU (Atmega 328P) - Arduino Uno R3**
+   - O microcontrolador é o cérebro do projeto, responsável por executar o código e controlar todas as operações do sistema. No caso deste projeto, o Arduino Uno R3 com MCU Atmega 328P é utilizado devido à sua facilidade de programação e ampla compatibilidade com diversos sensores e periféricos.
 
-- :heavy_check_mark: MCU (Atmega 328P) - Arduino Uno R3
-- :heavy_check_mark: LDR + Resistor 10KOhm
-- :heavy_check_mark: DHT-11 (Sensor de temperatura e umidade)
-- :heavy_check_mark: LCD 16x2 - I2C
-- :heavy_check_mark: Bateria de 9V
-- :heavy_check_mark: RTC (Real Time Clock)
-- :heavy_check_mark: Protoboard
-- :heavy_check_mark: Jumpers
-- :heavy_check_mark: LEDs
-- :heavy_check_mark: Resistores
+2. **LDR + Resistor 10KOhm**
+   - O LDR (Light Dependent Resistor) é um sensor de luminosidade que varia sua resistência de acordo com a intensidade da luz incidente. O resistor de 10KOhm é utilizado em conjunto com o LDR para formar um divisor de tensão, permitindo que o Arduino possa medir a variação de resistência e, consequentemente, a luminosidade do ambiente.
 
+3. **DHT-11 (Sensor de temperatura e umidade)**
+   - O DHT-11 é um sensor que permite medir tanto a temperatura ambiente quanto a umidade relativa do ar. Ele é utilizado neste projeto para fornecer informações sobre as condições ambientais do local onde o sistema está instalado.
+
+4. **LCD 16x2 - I2C**
+   - O display LCD 16x2 é utilizado para exibir informações ao usuário de forma visual. A versão I2C deste display facilita a comunicação com o Arduino, reduzindo a quantidade de pinos necessários para conexão e simplificando o código de controle.
+
+5. **Bateria de 9V**
+   - A bateria de 9V é utilizada como fonte de energia para alimentar o sistema de forma autônoma, sem depender de uma fonte de alimentação externa.
+
+6. **RTC (Real Time Clock)**
+   - O RTC é um componente que mantém o controle preciso do tempo mesmo quando o sistema está desligado. Ele é utilizado neste projeto para registrar o momento exato em que cada medição é realizada, garantindo precisão temporal nos dados coletados.
+
+7. **Protoboard**
+   - A protoboard é uma placa de circuito que permite realizar conexões temporárias entre os componentes eletrônicos durante o desenvolvimento do projeto.
+
+8. **Jumpers**
+   - Os jumpers são cabos condutores utilizados para fazer as conexões elétricas entre os componentes na protoboard. Eles permitem uma montagem flexível e facilitam a reconfiguração do circuito conforme necessário.
+
+9. **LEDs**
+   - Os LEDs (Light Emitting Diodes) são dispositivos semicondutores que emitem luz quando uma corrente elétrica passa por eles. Neste projeto, os LEDs são utilizados para fornecer feedback visual ao usuário, indicando o status do sistema ou a ocorrência de eventos específicos.
+
+10. **Resistores**
+    - Os resistores são componentes eletrônicos que limitam a corrente elétrica em um circuito. Eles são utilizados em diferentes partes do projeto para garantir o funcionamento correto dos componentes, protegê-los contra sobrecargas e ajudar a ajustar níveis de tensão e corrente conforme necessário.
+
+<br>
+<hr />
+
+## :computer: Configuração do Ambiente de Desenvolvimento 
+<br>
+
+1. Instale o software de programação AVR de sua preferência (por exemplo, AVR Studio ou Arduino IDE);
+2. Conecte os componentes conforme o diagrama de conexão fornecido;
+3. Carregue o código fonte disponível neste repositório para o microcontrolador.
+<br>
+<hr />
+
+## :paperclip: Montagem do Circuito 
+<br>
+
+1. Conecte o Arduino Uno à protoboard;
+2. Conecte os sensores LDR e DHT11 à protoboard;
+3. Conecte o display LCD e o RTC à protoboard;
+4. Conecte os LEDs sinalizadores à protoboard;
+5. Utilize os jumpers para fazer as conexões entre os componentes de acordo com o esquema de ligação.
 <br>
 <hr />

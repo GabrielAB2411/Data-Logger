@@ -19,31 +19,16 @@ O objetivo deste trabalho é desenvolver um Proof of Concept (PoC) utilizando a 
 
 <hr />
 
-## :page_with_curl: Tutorial
+## :page_with_curl: Participantes
 
 <br>
 
-Lista de dependências para executar o projeto:
+Lista de participantes responsáveis pela elaboração do projeto:
 
-    Client:
-    - React 18
-    - Vite
-    - Tailwind CSS
-    - AOS
-    - React-Query
-    - Axios 
-    - Apex Charts
-    - Data table component
-    - React-Player
-    - React-Spinners
-    - React-Phosphor
-
-    Server:
-    - .Net 6
-    - Entity Framework Core
-    - SQL Server
-
-OBS: É necessário fazer a importação da base de dados do arquivo "datatran2013.csv" de dados dentro do seu banco de dados, e em seguida executar os scripts encontrado no arquivo "cria_banco.txt" e "normaliza_banco.txt" para que os dados possam ser acessados e consumidos propriamente.
+  - Ruan Faccin: 081220029
+  - Gustavo Braz: 081220001
+  - Gabriel Alves: 081220041
+  - Victor Albano: 081220000
 
 <br>
 
@@ -81,26 +66,11 @@ Projeto desenvolvido com os seguintes componentes:
 
 ## 📦 Documentação
 
-### Especificações técnica
+### Especificações técnica, Diagrama elétrico, Manual de operações e Código fonte
 
 | Link | Descrição |
 | --- | --- |
-| [`Especificação`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/EspeficacaoTecnica.md) | Plain JavaScript component |
-
-### Diagrama elétrico
-
-| Link | Descrição |
-| --- | --- |
-| [`Diagrama`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | [React](https://reactjs.org/) wrapper component |
-
-### Manual de operação
-
-| Link | Descrição |
-| --- | --- |
-| [`Manual`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/Manual.md) | Plugin to render chart |
-
-### Código fonte
-
-| Link | Descrição |
-| --- | --- |
-| [`Código`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | [React](https://reactjs.org/) wrapper component |
+| [`Especificação`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/EspeficacaoTecnica.md) | Documento que detalha os requisitos técnicos específicos do projeto|
+| [`Diagrama`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | Representação simplificada de um sistema elétrico do projeto |
+| [`Código`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | Código fonte utilizado no projeto |
+| [`Manual`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/Manual.md) | Documento que fornece instruções detalhadas sobre como usar, configurar e manter o produto 

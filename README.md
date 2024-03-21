@@ -72,5 +72,5 @@ Projeto desenvolvido com os seguintes componentes:
 | --- | --- |
 | [`Especificação`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/EspeficacaoTecnica.md) | Documento que detalha os requisitos técnicos específicos do projeto|
 | [`Diagrama`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | Representação simplificada de um sistema elétrico do projeto |
-| [`Código`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | Código fonte utilizado no projeto |
+| [`Código`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/DataLogger.ino) | Código fonte utilizado no projeto |
 | [`Manual`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/Manual.md) | Documento que fornece instruções detalhadas sobre como usar, configurar e manter o produto 

@@ -74,3 +74,4 @@ Projeto desenvolvido com os seguintes componentes:
 | [`Diagrama`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/Diagrama.md) | Representação simplificada de um sistema elétrico do projeto |
 | [`Código`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/DataLogger.ino) | Código fonte utilizado no projeto |
 | [`Manual`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/Manual.md) | Documento que fornece instruções detalhadas sobre como usar, configurar e manter o produto 
+| [`Video`](https://www.youtube.com/watch?v=Hp_HEACV858) | Video no Youtube da execução do projeto 

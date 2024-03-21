@@ -1,6 +1,6 @@
 <h1 align="center"> 
 <br>
-    <img src="./Assets/Title.PNG" width="270">
+    <img src="https://github.com/GabrielAB2411/NexumTech/assets/103553596/d4135cae-0443-4da5-b831-d4a1df760eca" width="670">
 <br>
 <br>
 Nexum Tech: Data Logger
@@ -84,7 +84,7 @@ Projeto desenvolvido com os seguintes componentes:
 
 | Link | Descrição |
 | --- | --- |
-| [`Especificação`](https://github.com/nhn/tui.editor/tree/master/apps/editor) | Plain JavaScript component |
+| [`Especificação`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/EspeficacaoTecnica.md) | Plain JavaScript component |
 
 ### Diagrama elétrico
 
@@ -96,7 +96,7 @@ Projeto desenvolvido com os seguintes componentes:
 
 | Link | Descrição |
 | --- | --- |
-| [`Manual`](https://github.com/nhn/tui.editor/tree/master/plugins/chart) | Plugin to render chart |
+| [`Manual`](https://github.com/GabrielAB2411/NexumTech/blob/main/DataLogger/Manual.md) | Plugin to render chart |
 
 ### Código fonte
 

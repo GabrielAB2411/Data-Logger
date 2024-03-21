@@ -1,9 +1,10 @@
 <h1 align="center"> 
 <br>
-    <img src="./Assets/Title.PNG" width="270">
+    <img src="https://github.com/GabrielAB2411/NexumTech/assets/103553596/d4135cae-0443-4da5-b831-d4a1df760eca" width="800" height="400";
+>
 <br>
 <br>
-Nexum Tech: Manual do usuário
+Nexum Tech: Manual de operações
 </h1>
 
 <hr />

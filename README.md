@@ -66,7 +66,7 @@ Projeto desenvolvido com os seguintes componentes:
 
 ## 📦 Documentação
 
-### Especificação técnica/ Diagrama elétrico/ Manual de operações/ Código fonte
+### Especificação técnica, Diagrama elétrico, Manual de operações e Código fonte
 
 | Link | Descrição |
 | --- | --- |

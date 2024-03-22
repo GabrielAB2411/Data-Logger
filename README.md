@@ -28,7 +28,7 @@ Lista de participantes responsáveis pela elaboração do projeto:
   - Ruan Faccin: 081220029
   - Gustavo Braz: 081220001
   - Gabriel Alves: 081220041
-  - Victor Albano: 081220000
+  - Victor Albano: 081220034
 
 <br>
 
